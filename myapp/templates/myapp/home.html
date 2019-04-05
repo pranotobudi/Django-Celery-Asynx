@@ -82,10 +82,10 @@
             <div class="text-white text-center py-5 px-4 my-5">
               <div>
                 <!-- <h2 class="card-title h3-responsive pt-3 mb-1 font-bold"><strong>Smile</strong></h2> -->
-                <h2 class="card-title h1-responsive pt-3 mb-5 font-bold"><strong>Smile, it’s free therapy.</strong></h2>
-                <p class="mx-5 mb-5">This website is about my projects portfolio, my learning journey and also interesting things about technology.
+                <h2 class="card-title h1-responsive pt-3 mb-5 font-bold"><strong>Django Celery Asynx</strong></h2>
+                <p class="mx-5 mb-5">
                 </p>
-                <a class="btn btn-outline-white btn-md" href="#my-project-gallery"><i class="fas fa-clone left"></i> View Gallery</a>
+                <a class="btn btn-outline-white btn-md" href="#my-project-gallery"><i class="fas fa-clone left"></i> View Projects</a>
               </div>
             </div>
           </div>
@@ -104,26 +104,48 @@
         <div class="row">
       
           <!-- Grid column -->
-          <div class="col-md-12 mb-4">
+          <div class="col-md-6 mb-4">
             <div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/img%20%2832%29.jpg);">
               <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4 rounded">
                 <div>
                   <h6 class="purple-text">
                     <i class="fas fa-plane"></i>
-                    <strong> Social Media</strong>
+                    <strong> Async Task</strong>
                   </h6>
                   <h3 class="py-3 font-weight-bold">
-                    <strong>Micro Facebook Clone</strong>
+                    <strong>Async Task - Generate Random User - Pull</strong>
                   </h3>
-                  <p class="pb-3">This Project is inspired by Facebook and try to clone some of Facebook's functionalities. We call it as Micro Facebook because the real Facebook functionality is soo huuuge and has really gigantic features, build by hundreds of developers. So, this project just for fun as part of my learning journey. Please take a look!
+                  <p class="pb-3">This Project will generate random user account and display to the frontend using Pull Technique (Ajax continous checking)
                   </p>
-                  <a class="btn btn-secondary btn-rounded btn-md" href="#micro-facebook-clone"><i class="fas fa-clone left"></i> See More</a>
+                  <a class="btn btn-secondary btn-rounded btn-md" href="/generate-random-user-pull/">
+                    <i class="fas fa-clone left"></i> See More
+                  </a>
+            
                 </div>
               </div>
             </div>
           </div>
           <!-- Grid column -->
-      
+          <!-- Grid column -->
+          <div class="col-md-6 mb-4">
+            <div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/img%20%2832%29.jpg);">
+              <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4 rounded">
+                <div>
+                  <h6 class="blue-text">
+                    <i class="fas fa-plane"></i>
+                    <strong> Async Task</strong>
+                  </h6>
+                  <h3 class="py-3 font-weight-bold">
+                    <strong>Async Task - Generate Random User - Push</strong>
+                  </h3>
+                  <p class="pb-3">This Project will generate random user account and display to the frontend using Push Technique (Web Socket)
+                  </p>
+                  <a class="btn btn-blue btn-rounded btn-md" href="/generate-random-user-push/"><i class="fas fa-clone left"></i> See More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Grid column -->      
           <!-- Grid column -->
           <div class="col-md-6 mb-md-0 mb-4">
             <div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20%2873%29.jpg);">
@@ -131,14 +153,14 @@
                 <div>
                   <h6 class="pink-text">
                     <i class="fas fa-chart-pie"></i>
-                    <strong> Content Management System</strong>
+                    <strong>Async Periodic Task</strong>
                   </h6>
                   <h3 class="py-3 font-weight-bold">
-                    <strong>Mini CMS</strong>
+                    <strong>Scheduler - Load Flickr Image - Pull</strong>
                   </h3>
-                  <p class="pb-3">This project is inspired by Wordpress which has functionalities to create, display, edit, delete and manage content. 
+                  <p class="pb-3">This project will load images from flickr periodically using Pull Technique (ajax continuous checking) 
                   </p>
-                  <a class="btn btn-pink btn-rounded btn-md" href="#mini-cms"><i class="fas fa-clone left"></i> See More</a>
+                  <a class="btn btn-pink btn-rounded btn-md" href="/load-flickr-images-pull/"><i class="fas fa-clone left"></i> See More</a>
                 </div>
               </div>
             </div>
@@ -152,14 +174,14 @@
                 <div>
                   <h6 class="green-text">
                     <i class="fas fa-eye"></i>
-                    <strong> Portfolio Theme</strong>
+                    <strong>Async Periodic Task</strong>
                   </h6>
                   <h3 class="py-3 font-weight-bold">
-                    <strong>My Personal Website</strong>
+                    <strong>Scheduler - Load Flickr Image - Push</strong>
                   </h3>
-                  <p class="pb-3">This project is this website itself. It display my project's gallery and also has blogging features (blog admin functionality) behind the screen.!
+                  <p class="pb-3">This project will load images from flickr periodically using Push Technique (Web Socket)
                   </p>
-                  <a class="btn btn-success btn-rounded btn-md" href="#my-personal-website"><i class="fas fa-clone left"></i> See More</a>
+                  <a class="btn btn-success btn-rounded btn-md" href="/load-flickr-images-push/"><i class="fas fa-clone left"></i> See More</a>
                 </div>
               </div>
             </div>
@@ -171,384 +193,6 @@
       
       </section>
       <!-- Projects section v.4 -->
-
-<!-- Section: Features v.4 -->
-<section class="my-5">
-
-        <!-- Section heading -->
-        <h2 id="micro-facebook-clone" class="h1-responsive font-weight-bold text-center my-5">Micro Facebook Clone</h2>
-        <!-- Section description -->
-        <p class="lead grey-text text-center w-responsive mx-auto mb-5">Powered by Django + React + Ant Design UI Kit + Heroku <br/> It uses multiple features and libraries of Django and React</p>
-      
-        <!-- Grid row -->
-        <div class="row">
-      
-          <!-- Grid column -->
-          <div class="col-md-4">
-      
-            <!-- Grid row -->
-            <div class="row mb-3">
-      
-              <!-- Grid column -->
-              <div class="col-2">
-                <i class="fas fa-2x fa-flag-checkered deep-purple-text"></i>
-              </div>
-              <!-- Grid column -->
-      
-              <!-- Grid column -->
-              <div class="col-10">
-                <h5 class="font-weight-bold mb-3">Django REST Framework</h5>
-                <p class="grey-text">It provides the frontend the data from the database through API endpoint with the help of Django REST Framework</p>
-              </div>
-              <!-- Grid column -->
-      
-            </div>
-            <!-- Grid row -->
-      
-            <!-- Grid row -->
-            <div class="row mb-3">
-      
-              <!-- Grid column -->
-              <div class="col-2">
-                <i class="fas fa-2x fa-flask deep-purple-text"></i>
-              </div>
-              <!-- Grid column -->
-      
-              <!-- Grid column -->
-              <div class="col-10">
-                <h5 class="font-weight-bold mb-3">Django Token Authentication</h5>
-                <p class="grey-text">It uses Token Authentication for the log-in process of the frontend and checks the User database at the backend.</p>
-              </div>
-              <!-- Grid column -->
-      
-            </div>
-            <!-- Grid row -->
-      
-            <!-- Grid row -->
-            <div class="row mb-md-0 mb-3">
-      
-              <!-- Grid column -->
-              <div class="col-2">
-                <i class="fas fa-2x fa-glass-martini deep-purple-text"></i>
-              </div>
-              <!-- Grid column -->
-      
-              <!-- Grid column -->
-              <div class="col-10">
-                <h5 class="font-weight-bold mb-3">Django Custom User Class</h5>
-                <p class="grey-text mb-md-0">It extends UserBaseManager class to create Custom User to adjust specific needs of this apps. It also customize the UserAdmin class for the same reason.</p>
-              </div>
-              <!-- Grid column -->
-      
-            </div>
-            <!-- Grid row -->
-
-
-      
-          </div>
-          <!-- Grid column -->
-      
-          <!-- Grid column -->
-          <div class="col-md-4 text-center">
-            <!-- <img class="img-fluid" src="https://mdbootstrap.com/img/Mockups/Transparent/Small/iphone-portfolio1.png"
-              alt="Sample image"> -->
-              <img class="img-fluid" src="https://s3.amazonaws.com/proactivedomain/mac_desktop--micro-fb-clone-transparent-450px.png"
-              alt="Sample image">
-          </div>
-          <!-- Grid column -->
-      
-          <!-- Grid column -->
-          <div class="col-md-4">
-      
-            <!-- Grid row -->
-            <div class="row mb-3">
-      
-              <!-- Grid column -->
-              <div class="col-2">
-                <i class="far fa-2x fa-heart deep-purple-text"></i>
-              </div>
-              <!-- Grid column -->
-      
-              <!-- Grid column -->
-              <div class="col-10">
-                <h5 class="font-weight-bold mb-3">React Router</h5>
-                <p class="grey-text">It handles the routing process at the frontend using React Router. </p>
-              </div>
-              <!-- Grid column -->
-      
-            </div>
-            <!-- Grid row -->
-      
-            <!-- Grid row -->
-            <div class="row mb-3">
-      
-              <!-- Grid column -->
-              <div class="col-2">
-                <i class="fas fa-2x fa-bolt deep-purple-text"></i>
-              </div>
-              <!-- Grid column -->
-      
-              <!-- Grid column -->
-              <div class="col-10">
-                <h5 class="font-weight-bold mb-3">Axios</h5>
-                <p class="grey-text">It makes HTTP Request from the client browser to the backend using Axios Library.</p>
-              </div>
-              <!-- Grid column -->
-      
-            </div>
-            <!-- Grid row -->
-      
-            <!-- Grid row -->
-            <div class="row mb-3">
-      
-              <!-- Grid column -->
-              <div class="col-2">
-                <i class="fas fa-2x fa-magic deep-purple-text"></i>
-              </div>
-              <!-- Grid column -->
-      
-              <!-- Grid column -->
-              <div class="col-10">
-                <h5 class="font-weight-bold mb-3">React Components</h5>
-                <p class="grey-text mb-0">Its frontend display consist of dozens of React Components with Ant Design UI Kit.</p>
-              </div>
-              <!-- Grid column -->
-      
-            </div>
-            <!-- Grid row -->
-      
-            <!-- Grid row -->
-            <div class="row">
-
-              <!-- Grid column -->
-              <div class="col-2">
-                <i class="fas fa-2x fa-flag-checkered deep-purple-text"></i>
-              </div>
-              <!-- Grid column -->
-      
-              <!-- Grid column -->
-              <div class="col-10">
-                <h5 class="font-weight-bold mb-3">PostgreSQL Database</h5>
-                <p class="grey-text">It changes its default database (SQLite3) to PostgreSQL database to adjust the production environment (Heroku app).</p>
-              </div>
-              <!-- Grid column -->
-      
-            </div>
-            <!-- Grid row -->
-
-          </div>
-          <!-- Grid column -->
-      
-        </div>
-        <!-- Grid row -->
-      
-      </section>
-      <!-- Section: Features v.4 -->      
-      <a 
-        href="https://micro-facebook-clone.herokuapp.com/signup/" 
-        target="_blank" 
-        style="text-decoration: none; color: white"
-      >
-        <button type="button" class="btn purple-gradient btn-lg btn-block">
-            View Micro Facebook Clone in Action
-        </button>
-      </a>
-
-<!-- Section: Features v.3 -->
-<section class="my-5">
-
-        <!-- Section heading -->
-        <h2 id="mini-cms" class="h1-responsive font-weight-bold text-center my-5">Mini CMS</h2>
-        <!-- Section description -->
-        <p class="lead grey-text text-center w-responsive mx-auto mb-5">Powered by Django + Bootstrap + Heroku</p>
-      
-        <!-- Grid row -->
-        <div class="row">
-      
-          <!-- Grid column -->
-          <div class="col-lg-5 text-center text-lg-left">
-            <!-- <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/screens-section.jpg" alt="Sample image"> -->
-            <img class="img-fluid" src="https://s3.amazonaws.com/proactivedomain/django-mini-cms-homepage-screenshot-500px.PNG" alt="Sample image">
-          </div>
-          <!-- Grid column -->
-      
-          <!-- Grid column -->
-          <div class="col-lg-7">
-      
-
-      
-            <!-- Grid row -->
-            <div class="row mb-3">
-      
-              <!-- Grid column -->
-              <div class="col-1">
-                <i class="fas fa-share fa-lg indigo-text"></i>
-              </div>
-              <!-- Grid column -->
-      
-              <!-- Grid column -->
-              <div class="col-xl-10 col-md-11 col-10">
-                <h5 class="font-weight-bold mb-3">CRUD Posts</h5>
-                <p class="grey-text">It enables user to create, display, update, and delete posts</p>
-              </div>
-              <!-- Grid column -->
-      
-            </div>
-            <!-- Grid row -->
-            
-            <!-- Grid row -->
-            <div class="row mb-3">
-      
-              <!-- Grid column -->
-              <div class="col-1">
-                <i class="fas fa-share fa-lg indigo-text"></i>
-              </div>
-              <!-- Grid column -->
-      
-              <!-- Grid column -->
-              <div class="col-xl-10 col-md-11 col-10">
-                <h5 class="font-weight-bold mb-3">Login Logout</h5>
-                <p class="grey-text">It provides user registration page and allows to login and logout.</p>
-              </div>
-              <!-- Grid column -->
-      
-            </div>
-            <!-- Grid row -->
-
-            <!-- Grid row -->
-            <div class="row mb-3">
-      
-              <!-- Grid column -->
-              <div class="col-1">
-                <i class="fas fa-share fa-lg indigo-text"></i>
-              </div>
-              <!-- Grid column -->
-      
-              <!-- Grid column -->
-              <div class="col-xl-10 col-md-11 col-10">
-                <h5 class="font-weight-bold mb-3">User Profile</h5>
-                <p class="grey-text">It allows user to change their profile picture. It uses Amazon AWS S3 and django-storages library to serve static file.</p>
-              </div>
-              <!-- Grid column -->
-      
-            </div>
-            <!-- Grid row -->
-      
-            <!--Grid row-->
-            <div class="row mb-3">
-      
-              <!-- Grid column -->
-              <div class="col-1">
-                <i class="fas fa-share fa-lg indigo-text"></i>
-              </div>
-              <!-- Grid column -->
-      
-              <!-- Grid column -->
-              <div class="col-xl-10 col-md-11 col-10">
-                <h5 class="font-weight-bold mb-3">Email Password Reset</h5>
-                <p class="grey-text mb-0"> It enable users to request password reset when forget their password. They will receive notification through email. It uses gmail SMTP to send email.</p>
-              </div>
-              <!-- Grid column -->
-      
-            </div>
-            <!--Grid row-->
-      
-            <!--Grid row-->
-            <div class="row">
-      
-              <!-- Grid column -->
-              <div class="col-1">
-                <i class="fas fa-share fa-lg indigo-text"></i>
-              </div>
-              <!-- Grid column -->
-      
-              <!-- Grid column -->
-              <div class="col-xl-10 col-md-11 col-10">
-                <h5 class="font-weight-bold mb-3">Pagination</h5>
-                <p class="grey-text mb-0"> It gives pagination to blog posts.</p>
-              </div>
-              <!-- Grid column -->
-      
-            </div>
-            <!--Grid row-->
-
-          </div>
-          <!--Grid column-->
-      
-        </div>
-        <!-- Grid row -->
-      
-      </section>
-      <!-- Section: Features v.3 -->
-      <a 
-      href="https://django-mini-cms.herokuapp.com/" 
-      target="_blank" 
-      style="text-decoration: none; color: white"
-      >
-        <button type="button" class="btn peach-gradient btn-lg btn-block">
-          View Mini CMS in Action
-        </button>
-      </a>
-    <!-- Section: Features v.1 -->
-    <section class="text-center my-5">
-
-            <!-- Section heading -->
-            <h2 id="my-personal-website" class="h1-responsive font-weight-bold my-5">My Personal Website</h2>
-            <!-- Section description -->
-            <p class="lead grey-text w-responsive mx-auto mb-5">Powered by Django + MDBootstrap + Heroku</p>
-          
-            <!-- Grid row -->
-            <div class="row">
-          
-              <!-- Grid column -->
-              <div class="col-md-4">
-          
-                <i class="fas fa-chart-area fa-3x red-text"></i>
-                <h5 class="font-weight-bold my-4">Material Design Bootstrap</h5>
-                <p class="grey-text mb-md-0 mb-5">
-                  It Utilizes material design bootstrap (Bootstrap with material design concept) as CSS Framework.
-                </p>
-          
-              </div>
-              <!-- Grid column -->
-          
-              <!-- Grid column -->
-              <div class="col-md-4">
-          
-                <i class="fas fa-book fa-3x cyan-text"></i>
-                <h5 class="font-weight-bold my-4">Variable Environment</h5>
-                <p class="grey-text mb-md-0 mb-5">
-                    It crete separate files for development and production. It helps us to set different value for our Database variables, etc.                 
-                </p>
-          
-              </div>
-              <!-- Grid column -->
-          
-              <!-- Grid column -->
-              <div class="col-md-4">
-          
-                <i class="far fa-comments fa-3x orange-text"></i>
-                <h5 class="font-weight-bold my-4">MVT Architecture</h5>
-                <p class="grey-text mb-0">
-                  It uses pure MVT (Model View Template) architecture and URL routing from Django.
-                </p>
-          
-              </div>
-              <!-- Grid column -->
-          
-            </div>
-            <!-- Grid row -->
-          
-          </section>
-          <!-- Section: Features v.1 -->
-          <a 
-      href="#home" 
-      style="text-decoration: none; color: white"
-      >
-        <button type="button" class="btn blue-gradient btn-lg btn-block">
-          My Website in Action
-        </button>
-      </a>
 
           
 <!-- Footer -->
