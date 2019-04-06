@@ -10,7 +10,7 @@
 <body style="text-align: center;">
     <h1>Generate Random Users</h1>
     <progress id="progress-bar" value="0" max="100" style="display:none; margin-bottom: 1em;"></progress>
-    <form id="generate-user-form" action="/generate-user/" method="post">
+    <form id="generate-user-form" action="/generate-random-user-pull/" method="post">
         {% csrf_token %}
         {{ form }}
         <input type="submit" value="Submit"/>

@@ -19,13 +19,17 @@ from myapp.views import (home_view,
                         generate_random_user_pull, 
                         generate_random_user_push, 
                         load_flickr_images_pull, 
-                        load_flickr_images_push)
+                        load_flickr_images_push, 
+                        check_progress_view,
+                        PhotoView,
+                        )
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home_view, name='home'),
     path('generate-random-user-pull/', generate_random_user_pull),
     path('generate-random-user-push/', generate_random_user_push),
-    path('load-flickr-images-pull/', load_flickr_images_pull),
+    path('load-flickr-images-pull/', PhotoView.as_view()),
     path('load-flickr-images-push/', load_flickr_images_push),
+    path('check-progress-view/', check_progress_view),
 ]

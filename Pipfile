@@ -11,6 +11,8 @@ flake8 = "*"
 celery = "*"
 psycopg2-binary = "*"
 psycopg2 = "*"
+gevent = "*"
+requests = "*"
 
 [requires]
 python_version = "3.7"
