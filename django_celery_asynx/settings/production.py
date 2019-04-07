@@ -1,7 +1,7 @@
 from .base import *
 
 DEBUG = False
-ALLOWED_HOSTS = ['django-celery-asynx.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 DATABASES = {
     'default': {
         # 'ENGINE': 'django.db.backends.sqlite3',
