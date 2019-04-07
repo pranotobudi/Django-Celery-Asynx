@@ -1,7 +1,7 @@
 from .base import *
 
 DEBUG = False
-ALLOWED_HOSTS = ['django-micro-facebook-clone.herokuapp.com']
+ALLOWED_HOSTS = ['django-celery-asynx.herokuapp.com']
 DATABASES = {
     'default': {
         # 'ENGINE': 'django.db.backends.sqlite3',
