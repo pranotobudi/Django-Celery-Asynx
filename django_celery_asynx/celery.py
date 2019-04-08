@@ -2,7 +2,7 @@ import os
 from celery import Celery
 
 # set the default Django settings module for the 'celery' program.
-# os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_celery_asynx.settings.development')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_celery_asynx.settings.production')
 
 app = Celery('django_celery_asynx')
 
@@ -10,7 +10,7 @@ app = Celery('django_celery_asynx')
 # the configuration object to child processes.
 # namespace='CELERY' means all celery-related configuration keys
 # should have a `CELERY_` prefix.
-app.config_from_object('django_celery_asynx.celeryconfig-production', namespace='CELERY')
+app.config_from_object('django_celery_asynx.celeryconfig-development', namespace='CELERY')
 
 # Load task modules from all registered Django app configs.
 app.autodiscover_tasks()
