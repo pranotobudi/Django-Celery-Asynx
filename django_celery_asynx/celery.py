@@ -18,7 +18,7 @@ app.autodiscover_tasks()
 app.conf.beat_schedule = {
     'task-name': {
          'task': 'photos.tasks.task_save_latest_flickr_image', 
-         'schedule': 10.0,
+         'schedule': 900.0,
     },
 }
 
