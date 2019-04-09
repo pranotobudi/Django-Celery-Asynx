@@ -49,7 +49,7 @@
                 else if(data.state=='PROGRESS' || data.state=='SUCCESS'){
                     pgrbar.css('display', 'inline');	
                     pgrbar.val(data.result.percent);
-                    frm.html(data.result.current + 'out of' + data.result.total);
+                    frm.html(data.result.current + ' out of ' + data.result.total);
                 }
                 
                 if(data.state != 'SUCCESS'){
