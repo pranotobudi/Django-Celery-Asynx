@@ -44,6 +44,11 @@ def generate_random_user_pull(request):
         form = GenerateUserForm()
 
     return render(request, 'myapp/generate_random_user_pull.html', {'form': form})
+class PhotoView(ListView):
+    model = Photo
+    template_name = 'photos/photo_list.html'
+    paginate_by = 24
+
 
 def check_progress_view(request):
     task_id = request.GET.get('task_id', None)
@@ -58,7 +63,3 @@ def check_progress_view(request):
     
     return HttpResponse('No job id given.')
     
-class PhotoView(ListView):
-    model = Photo
-    template_name = 'photos/photo_list.html'
-    paginate_by = 24
